@@ -1,0 +1,28 @@
+{
+  "name": "lending",
+  "version": "1.0.0",
+  "description": "lending",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bioclean/landing.git"
+  },
+  "keywords": [
+    "lending"
+  ],
+  "author": "Serge Redko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bioclean/landing/issues"
+  },
+  "homepage": "https://github.com/Bioclean/landing#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
