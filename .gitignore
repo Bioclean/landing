@@ -2,10 +2,10 @@
 build
 node_modules
 npm-debug.log
+
 ### Windows template
 # Windows image file caches
 Thumbs.db
-ehthumbs.db
 
 # Folder config file
 Desktop.ini

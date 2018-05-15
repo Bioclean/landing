@@ -21,4 +21,4 @@
 > git clone https://github.com/Bioclean/landing.git
 
 * Запустить команду npm install в терминале. Данная команда установит все пакеты, которые указанны в файле
-packege.json, а также все их зависимости
+package.json, а также все их зависимости
