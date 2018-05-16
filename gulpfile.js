@@ -5,7 +5,8 @@ const sass = require('gulp-sass');
 const spritesmith = require('gulp.spritesmith');
 const rimraf = require('rimraf');
 const rename = require('gulp-rename');
-
+const autoprefixer = require('gulp-autoprefixer');
+var sourcemaps = require('gulp-sourcemaps');
 
 
 
@@ -83,3 +84,20 @@ gulp.task('default', gulp.series(
     gulp.parallel('watch', 'server')
     )
 );
+/* ------------ Autoprefixer ------------- */
+gulp.task('autoprefixer', function () {
+    return gulp.src('source/styles/main.css')
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('dist'));
+});
+
+/* ------------ Sourcemaps ------------- */
+gulp.task('javascript', function() {
+    gulp.src('src/**/*.js')
+        .pipe(sourcemaps.init())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('dist'));
+});
